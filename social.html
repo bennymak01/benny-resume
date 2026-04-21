@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>社交媒體 / Social — 麥富華 Benny Mak</title>
-  <meta name="description" content="麥富華的 Carousell HK 及 Instagram 產品上架紀錄。每日1–3個新上架，涵蓋文具、風箏、絲帶、貼紙等品類。" />
+  <title>社交小編 — 麥富華 Benny Mak</title>
+  <meta name="description" content="麥富華 Benny Mak 的社交媒體管理作品集，涵蓋志成日曆、志成文具店、CS Sticker 及 CS Kites。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -12,6 +12,67 @@
   <link rel="stylesheet" href="css/layout.css" />
   <link rel="stylesheet" href="css/components.css" />
   <script src="https://unpkg.com/phosphor-icons" defer></script>
+  <style>
+    .social-editor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .brand-card {
+      background: var(--bg-card, #fff);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+      border: 1px solid var(--border-color, #eee);
+    }
+    .brand-card:hover {
+      transform: translateY(-5px);
+    }
+    .brand-info {
+      padding: 1.5rem;
+    }
+    .brand-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+    .brand-links {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .brand-links a {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .brand-links a:hover {
+      color: var(--primary-color, #007aff);
+    }
+    .brand-links i {
+      font-size: 1.2rem;
+    }
+    .ig-screenshot {
+      width: 100%;
+      aspect-ratio: 16/10;
+      object-fit: cover;
+      border-top: 1px solid #eee;
+    }
+    .brand-website {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+  </style>
 </head>
 <body>
 
@@ -25,7 +86,7 @@
       <nav class="site-nav" aria-label="主要導航">
         <a href="index.html">首頁</a>
         <a href="projects.html">作品集</a>
-        <a href="social.html">社交媒體</a>
+        <a href="social.html" class="active">社交小編</a>
         <a href="performance.html">數據表現</a>
         <a href="contact.html">聯絡</a>
       </nav>
@@ -35,172 +96,70 @@
   <!-- Page intro -->
   <section class="page-intro section--tight">
     <div class="container">
-      <p class="section-label fade-up">社交媒體 / Social Feed</p>
-      <h1 class="hero-name fade-up" style="animation-delay:.08s;font-size:clamp(2rem,5vw,3rem)">產品上架紀錄</h1>
-      <p class="hero-title fade-up" style="animation-delay:.16s">Carousell HK &middot; Instagram &middot; 每日持續更新</p>
-      <div class="fade-up" style="animation-delay:.24s;margin-top:1.25rem;display:flex;flex-wrap:wrap;gap:.75rem;align-items:center">
-        <span class="tag tag--platform">Carousell HK</span>
-        <span class="tag tag--platform">Instagram</span>
-        <span style="font-size:.875rem;color:var(--text-muted)">每日1–3個新Carousell HK產品上架 · 1–3 new listings daily</span>
-      </div>
+      <p class="section-label fade-up">Social Media Management</p>
+      <h1 class="hero-name fade-up" style="animation-delay:.08s;font-size:clamp(2rem,5vw,3rem)">社交小編 Page</h1>
+      <p class="hero-title fade-up" style="animation-delay:.16s">品牌社交媒體運營 · 內容創作 · 粉絲互動</p>
     </div>
   </section>
 
-  <!-- Social grid -->
+  <!-- Social Editor Grid -->
   <section class="section--tight" style="padding-top:0">
     <div class="container">
-
-      <p class="catalog-note">
-        <i class="ph ph-info" style="vertical-align:middle;margin-right:.4rem"></i>
-        以下為產品上架示例紀錄。實際上架內容請直接瀏覽各平台。
-        <span style="display:block;margin-top:.2rem;font-size:.75rem;color:var(--text-muted)">Sample listing archive. Visit platforms directly for live listings.</span>
-      </p>
-
-      <div class="masonry-grid">
-
-        <div class="social-card fade-up" style="animation-delay:.04s">
-          <div class="social-card-header">
-            <span class="tag tag--platform">Carousell HK</span>
-            <span class="tag tag--ribbons">絲帶</span>
+      <div class="social-editor-grid">
+        
+        <!-- 志成日曆 -->
+        <div class="brand-card fade-up" style="animation-delay:.04s">
+          <div class="brand-info">
+            <h2 class="brand-name">志成日曆</h2>
+            <a href="https://chishingcal.com.hk/" target="_blank" class="brand-website">chishingcal.com.hk</a>
+            <div class="brand-links">
+              <a href="https://www.facebook.com/ChiShingCalendar/" target="_blank"><i class="ph ph-facebook-logo"></i> Facebook</a>
+              <a href="https://www.instagram.com/chishingcal/" target="_blank"><i class="ph ph-instagram-logo"></i> Instagram</a>
+            </div>
           </div>
-          <div class="social-card-img-placeholder">
-            <i class="ph ph-image" style="font-size:2rem;"></i>
-          </div>
-          <p class="social-card-title">各款包裝絲帶批發 — 緞帶 · 花邊 · 印花絲帶</p>
-          <div class="social-card-meta">
-            <span>ribbon.hk</span>
-            <span>2026-04</span>
-          </div>
+          <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663447647859/QxZDxUTEGEoEFmFl.png" alt="志成日曆 Instagram" class="ig-screenshot">
         </div>
 
-        <div class="social-card fade-up" style="animation-delay:.08s">
-          <div class="social-card-header">
-            <span class="tag tag--platform">Carousell HK</span>
-            <span class="tag tag--kites">風箏</span>
+        <!-- 志成文具店 -->
+        <div class="brand-card fade-up" style="animation-delay:.08s">
+          <div class="brand-info">
+            <h2 class="brand-name">志成文具店</h2>
+            <a href="https://csstationery.com/" target="_blank" class="brand-website">csstationery.com</a>
+            <div class="brand-links">
+              <a href="https://www.facebook.com/csstationery/" target="_blank"><i class="ph ph-facebook-logo"></i> Facebook</a>
+              <a href="https://www.instagram.com/cs_stationery/" target="_blank"><i class="ph ph-instagram-logo"></i> Instagram</a>
+            </div>
           </div>
-          <div class="social-card-img-placeholder">
-            <i class="ph ph-image" style="font-size:2rem;"></i>
-          </div>
-          <p class="social-card-title">傳統菱形風箏 — 適合兒童及初學者</p>
-          <div class="social-card-meta">
-            <span>csskiteshk.com</span>
-            <span>2026-04</span>
-          </div>
+          <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663447647859/bDmKIoXGDgpraVqg.png" alt="志成文具店 Instagram" class="ig-screenshot">
         </div>
 
-        <div class="social-card fade-up" style="animation-delay:.12s">
-          <div class="social-card-header">
-            <span class="tag tag--platform">Instagram</span>
-            <span class="tag tag--stickers">貼紙</span>
+        <!-- CS Sticker -->
+        <div class="brand-card fade-up" style="animation-delay:.12s">
+          <div class="brand-info">
+            <h2 class="brand-name">CS Sticker</h2>
+            <a href="https://stickerhk.com/" target="_blank" class="brand-website">stickerhk.com</a>
+            <div class="brand-links">
+              <a href="https://www.facebook.com/csstationery/" target="_blank"><i class="ph ph-facebook-logo"></i> Facebook</a>
+              <a href="https://www.instagram.com/cs_stationery/" target="_blank"><i class="ph ph-instagram-logo"></i> Instagram</a>
+            </div>
           </div>
-          <div class="social-card-img-placeholder" style="aspect-ratio:1/1">
-            <i class="ph ph-image" style="font-size:2rem;"></i>
-          </div>
-          <p class="social-card-title">客製防水貼紙 — 戶外 · 文具 · 包裝</p>
-          <div class="social-card-meta">
-            <span>stickerhk.com</span>
-            <span>2026-03</span>
-          </div>
+          <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663447647859/bDmKIoXGDgpraVqg.png" alt="CS Sticker Instagram" class="ig-screenshot">
         </div>
 
-        <div class="social-card fade-up" style="animation-delay:.16s">
-          <div class="social-card-header">
-            <span class="tag tag--platform">Carousell HK</span>
-            <span class="tag tag--stationery">文具</span>
+        <!-- CS Kites -->
+        <div class="brand-card fade-up" style="animation-delay:.16s">
+          <div class="brand-info">
+            <h2 class="brand-name">CS Kites</h2>
+            <a href="https://cskites.hk/" target="_blank" class="brand-website">cskites.hk</a>
+            <div class="brand-links">
+              <a href="https://www.facebook.com/cskites/" target="_blank"><i class="ph ph-facebook-logo"></i> Facebook</a>
+              <a href="https://www.instagram.com/cs_kites/" target="_blank"><i class="ph ph-instagram-logo"></i> Instagram</a>
+            </div>
           </div>
-          <div class="social-card-img-placeholder">
-            <i class="ph ph-image" style="font-size:2rem;"></i>
-          </div>
-          <p class="social-card-title">新年利是封 — 各款設計 批發零售</p>
-          <div class="social-card-meta">
-            <span>www.cspacket.com</span>
-            <span>2026-01</span>
-          </div>
-        </div>
-
-        <div class="social-card fade-up" style="animation-delay:.2s">
-          <div class="social-card-header">
-            <span class="tag tag--platform">Carousell HK</span>
-            <span class="tag tag--stationery">文具</span>
-          </div>
-          <div class="social-card-img-placeholder">
-            <i class="ph ph-image" style="font-size:2rem;"></i>
-          </div>
-          <p class="social-card-title">家用碎紙機推介 — 安靜型 · A4/A3</p>
-          <div class="social-card-meta">
-            <span>shredder.hk</span>
-            <span>2026-03</span>
-          </div>
-        </div>
-
-        <div class="social-card fade-up" style="animation-delay:.24s">
-          <div class="social-card-header">
-            <span class="tag tag--platform">Instagram</span>
-            <span class="tag tag--diy">DIY</span>
-          </div>
-          <div class="social-card-img-placeholder" style="aspect-ratio:1/1">
-            <i class="ph ph-image" style="font-size:2rem;"></i>
-          </div>
-          <p class="social-card-title">DIY風箏套件 — 親子手作體驗</p>
-          <div class="social-card-meta">
-            <span>diykit.hk</span>
-            <span>2026-02</span>
-          </div>
-        </div>
-
-        <div class="social-card fade-up" style="animation-delay:.28s">
-          <div class="social-card-header">
-            <span class="tag tag--platform">Carousell HK</span>
-            <span class="tag tag--calendars">月曆</span>
-          </div>
-          <div class="social-card-img-placeholder">
-            <i class="ph ph-image" style="font-size:2rem;"></i>
-          </div>
-          <p class="social-card-title">2026年掛牆月曆印刷 — 企業客製訂造</p>
-          <div class="social-card-meta">
-            <span>printcalendar.hk</span>
-            <span>2025-11</span>
-          </div>
-        </div>
-
-        <div class="social-card fade-up" style="animation-delay:.36s">
-          <div class="social-card-header">
-            <span class="tag tag--platform">Instagram</span>
-            <span class="tag tag--ribbons">絲帶</span>
-          </div>
-          <div class="social-card-img-placeholder" style="aspect-ratio:1/1">
-            <i class="ph ph-image" style="font-size:2rem;"></i>
-          </div>
-          <p class="social-card-title">婚禮緞帶佈置 — 各色系現貨批發</p>
-          <div class="social-card-meta">
-            <span>hkribbon.com</span>
-            <span>2026-02</span>
-          </div>
-        </div>
-
-        <div class="social-card fade-up" style="animation-delay:.48s">
-          <div class="social-card-header">
-            <span class="tag tag--platform">Instagram</span>
-            <span class="tag tag--stationery">文具</span>
-          </div>
-          <div class="social-card-img-placeholder" style="aspect-ratio:1/1">
-            <i class="ph ph-image" style="font-size:2rem;"></i>
-          </div>
-          <p class="social-card-title">志成文具店旺角門市 — 40年老字號</p>
-          <div class="social-card-meta">
-            <span>csstationery.com</span>
-            <span>2026-04</span>
-          </div>
+          <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663447647859/VNswWRAVYaUHnmhY.png" alt="CS Kites Instagram" class="ig-screenshot">
         </div>
 
       </div>
-
-      <p style="text-align:center;margin-top:3rem;color:var(--text-muted);font-size:.875rem">
-        <i class="ph ph-arrows-clockwise" style="vertical-align:middle;margin-right:.4rem"></i>
-        持續更新中 — 追蹤我們的最新上架產品<br>
-        <span style="font-size:.8rem">Continuously updated · Follow for latest listings</span>
-      </p>
-
     </div>
   </section>
 
@@ -215,7 +174,7 @@
         <nav class="footer-nav" aria-label="頁腳導航">
           <a href="index.html">首頁 Home</a>
           <a href="projects.html">作品集 Projects</a>
-          <a href="social.html">社交媒體 Social</a>
+          <a href="social.html">社交小編 Social</a>
           <a href="performance.html">數據表現 Performance</a>
           <a href="contact.html">聯絡 Contact</a>
         </nav>
