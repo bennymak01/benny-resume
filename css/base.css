@@ -1,0 +1,138 @@
+/* =========================================
+   BASE — Reset · Variables · Typography
+   ========================================= */
+
+:root {
+  --bg: #F9F6F0;
+  --text: #2C2C2C;
+  --text-muted: #6B6560;
+  --accent: #1D4E5A;
+  --accent-hover: #163D47;
+  --accent-warm: #B85C38;
+  --accent-warm-hover: #9A4C2E;
+  --border: #D8D2C8;
+  --surface: #FFFFFF;
+  --surface-tint: #F3EFE9;
+  --font-serif: 'DM Serif Display', 'Noto Serif TC', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', 'PingFang TC', system-ui, sans-serif;
+  --max-w: 1200px;
+  --radius: 2px;
+  --transition: 0.2s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  line-height: 1.7;
+  min-height: 100vh;
+  padding-bottom: 80px; /* space for sticky CTA bar */
+}
+
+/* --- Typography --- */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); }
+h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
+h4 { font-size: clamp(1rem, 2vw, 1.15rem); }
+
+p {
+  margin-bottom: 1rem;
+  max-width: 70ch;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Utility classes --- */
+
+.text-muted {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.text-serif {
+  font-family: var(--font-serif);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-warm {
+  color: var(--accent-warm);
+}
+
+/* --- Scroll animations --- */
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .fade-up.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* --- Focus styles --- */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: var(--radius);
+}

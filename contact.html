@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>聯絡 / Contact — 麥富華 Benny Mak</title>
+  <meta name="description" content="聯絡麥富華 — SEO顧問、內容合作、批發查詢均歡迎。WhatsApp即時回覆。志成文具店 · 旺角 · Since 1984。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <script src="https://unpkg.com/phosphor-icons" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">麥富華 · Benny Mak</a>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+        <i class="ph ph-list" style="font-size:1.5rem;"></i>
+      </button>
+      <nav class="site-nav" aria-label="主要導航">
+        <a href="index.html">首頁</a>
+        <a href="projects.html">作品集</a>
+        <a href="social.html">社交媒體</a>
+        <a href="performance.html">數據表現</a>
+        <a href="contact.html">聯絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page intro -->
+  <section class="page-intro section--tight">
+    <div class="container">
+      <p class="section-label fade-up">聯絡 / Contact</p>
+      <h1 class="hero-name fade-up" style="animation-delay:.08s;font-size:clamp(2rem,5vw,3rem)">聯絡我</h1>
+      <p class="hero-title fade-up" style="animation-delay:.16s">志成文具店 &middot; 旺角 &middot; Since 1984</p>
+      <div class="fade-up" style="animation-delay:.24s;margin-top:1rem;display:flex;flex-wrap:wrap;gap:.5rem">
+        <span class="tag tag--accent">SEO 顧問</span>
+        <span class="tag tag--default">內容合作</span>
+        <span class="tag tag--default">批發查詢</span>
+        <span class="tag tag--default">數碼合作</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact content -->
+  <section class="section--tight" style="padding-top:0">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div class="fade-up">
+          <h2 style="font-family:var(--font-serif);font-size:1.4rem;margin-bottom:1.5rem">發送訊息 / Send a Message</h2>
+          <form
+            class="contact-form"
+            action="mailto:bennymak01@gmail.com"
+            method="GET"
+            enctype="text/plain"
+          >
+            <div class="form-field">
+              <label class="form-label" for="name">姓名 / Name</label>
+              <input
+                class="form-input"
+                type="text"
+                id="name"
+                name="subject"
+                placeholder="你的姓名"
+                required
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="email">電郵 / Email</label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="from"
+                placeholder="your@email.com"
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="message">訊息 / Message</label>
+              <textarea
+                class="form-textarea"
+                id="message"
+                name="body"
+                placeholder="請告訴我你的查詢內容…"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="align-self:flex-start">
+              <i class="ph ph-paper-plane-tilt"></i>發送 / Send
+            </button>
+            <p class="text-muted" style="font-size:.75rem;margin-top:-.5rem">
+              按下發送將開啟你的預設電郵程式。<br>Clicking Send will open your default email client.
+            </p>
+          </form>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar fade-up" style="animation-delay:.1s">
+
+          <div class="contact-info-card">
+            <i class="ph ph-whatsapp-logo contact-info-icon" style="color:#25D366"></i>
+            <span class="contact-info-label">WhatsApp</span>
+            <a href="https://wa.me/85261741284" target="_blank" rel="noopener noreferrer" class="contact-info-value" style="color:var(--accent)">+852 6174 1284</a>
+            <span class="contact-info-desc">即時WhatsApp聯絡 · Instant WhatsApp reply</span>
+          </div>
+
+          <div class="contact-info-card">
+            <i class="ph ph-phone contact-info-icon"></i>
+            <span class="contact-info-label">電話 / Tel</span>
+            <a href="tel:+85261741284" class="contact-info-value" style="color:var(--accent)">+852 6174 1284</a>
+            <span class="contact-info-desc">香港本地通話 · HK local call</span>
+          </div>
+
+          <div class="contact-info-card">
+            <i class="ph ph-envelope contact-info-icon"></i>
+            <span class="contact-info-label">電郵 / Email</span>
+            <a href="mailto:bennymak01@gmail.com" class="contact-info-value" style="color:var(--accent)">bennymak01@gmail.com</a>
+            <span class="contact-info-desc">回覆時間：1–2個工作天 · 1–2 business days</span>
+          </div>
+
+          <div class="contact-info-card" style="background:var(--surface-tint)">
+            <i class="ph ph-storefront contact-info-icon" style="color:var(--accent-warm)"></i>
+            <span class="contact-info-label">關於我們</span>
+            <span class="contact-info-value">志成文具店 · CS Stationery</span>
+            <span class="contact-info-desc">
+              旺角 Mong Kok · Since 1984<br>
+              香港四十年老字號文具零售<br>
+              <span style="font-size:.75rem;margin-top:.3rem;display:block">40-year heritage stationery retailer in Hong Kong</span>
+            </span>
+          </div>
+
+          <div style="border:1px solid var(--border);padding:1.25rem;background:var(--surface)">
+            <p style="font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:.75rem">歡迎查詢 · Open to</p>
+            <ul style="display:flex;flex-direction:column;gap:.4rem">
+              <li style="display:flex;align-items:center;gap:.5rem;font-size:.875rem">
+                <i class="ph ph-check-circle" style="color:var(--accent);flex-shrink:0"></i>SEO顧問服務 / SEO Consulting
+              </li>
+              <li style="display:flex;align-items:center;gap:.5rem;font-size:.875rem">
+                <i class="ph ph-check-circle" style="color:var(--accent);flex-shrink:0"></i>內容合作 / Content Collaboration
+              </li>
+              <li style="display:flex;align-items:center;gap:.5rem;font-size:.875rem">
+                <i class="ph ph-check-circle" style="color:var(--accent);flex-shrink:0"></i>批發查詢 / Wholesale Inquiries
+              </li>
+              <li style="display:flex;align-items:center;gap:.5rem;font-size:.875rem">
+                <i class="ph ph-check-circle" style="color:var(--accent);flex-shrink:0"></i>數碼合作 / Digital Partnership
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-brand-name">麥富華 · Benny Mak</span>
+          <span class="footer-brand-tagline">志成文具店 · CS Stationery<br>Since 1984 · 旺角 Mong Kok</span>
+        </div>
+        <nav class="footer-nav" aria-label="頁腳導航">
+          <a href="index.html">首頁 Home</a>
+          <a href="projects.html">作品集 Projects</a>
+          <a href="social.html">社交媒體 Social</a>
+          <a href="performance.html">數據表現 Performance</a>
+          <a href="contact.html">聯絡 Contact</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="https://wa.me/85261741284" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+            <i class="ph ph-whatsapp-logo"></i>WhatsApp
+          </a>
+          <a href="tel:+85261741284" class="footer-contact-link">
+            <i class="ph ph-phone"></i>+852 6174 1284
+          </a>
+          <a href="mailto:bennymak01@gmail.com" class="footer-contact-link">
+            <i class="ph ph-envelope"></i>bennymak01@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 麥富華 Benny Mak. All rights reserved.</span>
+        <span>志成文具店 · CS Stationery · Since 1984</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA bar -->
+  <div class="sticky-cta" role="complementary" aria-label="快速聯絡">
+    <a href="https://docs.google.com/document/d/1KzcptzHapgTNbtCCPPLZSrJUTBIogOCF/edit" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size:.8rem;padding:.5rem 1rem;">
+      <i class="ph ph-download-simple"></i>下載履歷
+    </a>
+    <a href="https://wa.me/85261741284" target="_blank" rel="noopener noreferrer" class="sticky-cta-icon" aria-label="WhatsApp">
+      <i class="ph ph-whatsapp-logo" style="font-size:1.25rem;"></i>
+    </a>
+    <a href="tel:+85261741284" class="sticky-cta-icon" aria-label="電話">
+      <i class="ph ph-phone" style="font-size:1.25rem;"></i>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

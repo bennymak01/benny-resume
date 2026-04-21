@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>作品集 / Projects — 麥富華 Benny Mak</title>
+  <meta name="description" content="麥富華獨立建立並管理的19個利基電商及內容網站，涵蓋文具、風箏、絲帶、貼紙、月曆等品類。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <script src="https://unpkg.com/phosphor-icons" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo">麥富華 · Benny Mak</a>
+      <button class="nav-toggle" aria-label="開啟選單" aria-expanded="false">
+        <i class="ph ph-list" style="font-size:1.5rem;"></i>
+      </button>
+      <nav class="site-nav" aria-label="主要導航">
+        <a href="index.html">首頁</a>
+        <a href="projects.html">作品集</a>
+        <a href="social.html">社交媒體</a>
+        <a href="performance.html">數據表現</a>
+        <a href="contact.html">聯絡</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page intro -->
+  <section class="page-intro section--tight">
+    <div class="container">
+      <p class="section-label fade-up">作品集 / Projects</p>
+      <h1 class="hero-name fade-up" style="animation-delay:.08s;font-size:clamp(2rem,5vw,3rem)">19個利基網站</h1>
+      <p class="hero-title fade-up" style="animation-delay:.16s">獨立建立 &middot; 自主管理 &middot; AI輔助開發</p>
+      <p class="fade-up" style="animation-delay:.24s;color:var(--text-muted);max-width:65ch;margin-top:1rem">
+        從2020年起，運用GitHub Actions、Cloudflare CDN及AI輔助工作流程，獨立建立並持續維護以下19個利基電商及SEO內容網站。
+        <span style="display:block;margin-top:.4rem;font-size:.875rem">Since 2020, independently built and maintained using GitHub Actions, Cloudflare CDN, and AI-assisted workflows.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Filter -->
+  <section class="section--tight" style="padding-top:0">
+    <div class="container">
+      <div class="filter-bar fade-up">
+        <button class="filter-btn active" data-category="all">全部 All</button>
+        <button class="filter-btn" data-category="stationery">文具 Stationery</button>
+        <button class="filter-btn" data-category="print">印刷 Print</button>
+        <button class="filter-btn" data-category="kites">風箏 Kites</button>
+        <button class="filter-btn" data-category="stickers">貼紙 Stickers</button>
+        <button class="filter-btn" data-category="ribbons">絲帶 Ribbons</button>
+        <button class="filter-btn" data-category="calendars">月曆 Calendars</button>
+        <button class="filter-btn" data-category="diy">DIY</button>
+        <button class="filter-btn" data-category="cleaning">清潔 Cleaning</button>
+      </div>
+
+      <!-- Featured projects -->
+      <p class="catalog-note"><i class="ph ph-star" style="vertical-align:middle;margin-right:.4rem"></i>精選重點項目 Featured Projects</p>
+      <div class="project-grid project-grid--featured">
+
+        <div class="project-card project-card--featured fade-up" data-category="ribbons" style="animation-delay:.05s">
+          <div class="project-card-header">
+            <span class="project-card-domain">ribbon.hk</span>
+            <span class="tag tag--ribbons">Ribbons 絲帶</span>
+          </div>
+          <div class="project-card-meta">
+            <span class="project-card-year">2020</span>
+            <span class="tag tag--accent">精選</span>
+          </div>
+          <p class="project-card-desc-zh">香港絲帶專門店 — 各款包裝絲帶、花邊、緞帶批發零售</p>
+          <p class="project-card-desc-en">Hong Kong's dedicated ribbon shop. Wholesale &amp; retail of packaging ribbons, lace &amp; satin ribbons.</p>
+          <a href="https://ribbon.hk" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card project-card--featured fade-up" data-category="cleaning" style="animation-delay:.1s">
+          <div class="project-card-header">
+            <span class="project-card-domain">shredder.hk</span>
+            <span class="tag tag--cleaning">Cleaning 清潔</span>
+          </div>
+          <div class="project-card-meta">
+            <span class="project-card-year">2020</span>
+            <span class="tag tag--accent">精選</span>
+          </div>
+          <p class="project-card-desc-zh">碎紙機專門店 — 家用及商用碎紙機選購指南及批發</p>
+          <p class="project-card-desc-en">Dedicated shredder shop. Home &amp; office shredder buying guide and wholesale.</p>
+          <a href="https://shredder.hk" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card project-card--featured fade-up" data-category="calendars" style="animation-delay:.15s">
+          <div class="project-card-header">
+            <span class="project-card-domain">calendarprint.us</span>
+            <span class="tag tag--calendars">Calendars 月曆</span>
+          </div>
+          <div class="project-card-meta">
+            <span class="project-card-year">2023</span>
+            <span class="tag tag--warm">美國市場</span>
+          </div>
+          <p class="project-card-desc-zh">美國月曆印刷服務 — 面向北美市場的月曆客製印刷</p>
+          <p class="project-card-desc-en">US calendar printing service targeting the North American market. Custom calendar printing &amp; fulfillment.</p>
+          <a href="https://calendarprint.us" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card project-card--featured fade-up" data-category="kites" style="animation-delay:.2s">
+          <div class="project-card-header">
+            <span class="project-card-domain">csskiteshk.com</span>
+            <span class="tag tag--kites">Kites 風箏</span>
+          </div>
+          <div class="project-card-meta">
+            <span class="project-card-year">2020</span>
+            <span class="tag tag--accent">精選</span>
+          </div>
+          <p class="project-card-desc-zh">香港風箏專門店 — 各款傳統及現代風箏批發零售</p>
+          <p class="project-card-desc-en">Hong Kong's dedicated kite shop. Traditional &amp; modern kites — wholesale &amp; retail.</p>
+          <a href="https://csskiteshk.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card project-card--featured fade-up" data-category="stickers" style="animation-delay:.25s">
+          <div class="project-card-header">
+            <span class="project-card-domain">stickerhk.com</span>
+            <span class="tag tag--stickers">Stickers 貼紙</span>
+          </div>
+          <div class="project-card-meta">
+            <span class="project-card-year">2021</span>
+            <span class="tag tag--accent">精選</span>
+          </div>
+          <p class="project-card-desc-zh">香港貼紙專門店 — 各款客製貼紙、標籤貼紙批發零售</p>
+          <p class="project-card-desc-en">Hong Kong's dedicated sticker shop. Custom stickers &amp; label stickers — wholesale &amp; retail.</p>
+          <a href="https://stickerhk.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+      </div>
+
+      <!-- All other projects -->
+      <p class="catalog-note" style="margin-top:1px"><i class="ph ph-squares-four" style="vertical-align:middle;margin-right:.4rem"></i>全部網站 All Sites</p>
+      <div class="project-grid">
+
+        <div class="project-card fade-up" data-category="stickers" style="animation-delay:.05s">
+          <div class="project-card-header">
+            <span class="project-card-domain">stickerlabelhk.com</span>
+            <span class="tag tag--stickers">Stickers</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2021</span></div>
+          <p class="project-card-desc-zh">貼紙標籤專門店</p>
+          <p class="project-card-desc-en">Sticker label specialist shop</p>
+          <a href="https://stickerlabelhk.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="kites" style="animation-delay:.08s">
+          <div class="project-card-header">
+            <span class="project-card-domain">hongkongkite.com</span>
+            <span class="tag tag--kites">Kites</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2021</span></div>
+          <p class="project-card-desc-zh">香港風箏</p>
+          <p class="project-card-desc-en">Hong Kong kites — retail &amp; guide</p>
+          <a href="https://hongkongkite.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="calendars" style="animation-delay:.11s">
+          <div class="project-card-header">
+            <span class="project-card-domain">printcalendar.hk</span>
+            <span class="tag tag--calendars">Calendars</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2022</span></div>
+          <p class="project-card-desc-zh">月曆印刷服務</p>
+          <p class="project-card-desc-en">Hong Kong calendar printing service</p>
+          <a href="https://printcalendar.hk" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="ribbons" style="animation-delay:.14s">
+          <div class="project-card-header">
+            <span class="project-card-domain">ribbonhk.com</span>
+            <span class="tag tag--ribbons">Ribbons</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2021</span></div>
+          <p class="project-card-desc-zh">絲帶專門店</p>
+          <p class="project-card-desc-en">Ribbon specialist — wholesale &amp; retail</p>
+          <a href="https://ribbonhk.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="ribbons" style="animation-delay:.17s">
+          <div class="project-card-header">
+            <span class="project-card-domain">hkribbon.com</span>
+            <span class="tag tag--ribbons">Ribbons</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2022</span></div>
+          <p class="project-card-desc-zh">香港絲帶</p>
+          <p class="project-card-desc-en">HK ribbon — packaging &amp; decoration</p>
+          <a href="https://hkribbon.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="stationery" style="animation-delay:.2s">
+          <div class="project-card-header">
+            <span class="project-card-domain">redpackethk.com</span>
+            <span class="tag tag--stationery">Stationery</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2021</span></div>
+          <p class="project-card-desc-zh">利是封專門店</p>
+          <p class="project-card-desc-en">Hong Kong red packet specialist</p>
+          <a href="https://redpackethk.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="stationery" style="animation-delay:.23s">
+          <div class="project-card-header">
+            <span class="project-card-domain">csstationery.com</span>
+            <span class="tag tag--stationery">Stationery</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2020</span></div>
+          <p class="project-card-desc-zh">文具專門店</p>
+          <p class="project-card-desc-en">CS Stationery — stationery &amp; office supplies</p>
+          <a href="https://csstationery.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="diy" style="animation-delay:.26s">
+          <div class="project-card-header">
+            <span class="project-card-domain">diykit.hk</span>
+            <span class="tag tag--diy">DIY</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2022</span></div>
+          <p class="project-card-desc-zh">DIY套件專門店</p>
+          <p class="project-card-desc-en">DIY kit specialist — craft &amp; hobby</p>
+          <a href="https://diykit.hk" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="print" style="animation-delay:.29s">
+          <div class="project-card-header">
+            <span class="project-card-domain">packagingtapehk.com</span>
+            <span class="tag tag--print">Print</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2022</span></div>
+          <p class="project-card-desc-zh">包裝膠紙專門店</p>
+          <p class="project-card-desc-en">HK packaging tape specialist</p>
+          <a href="https://packagingtapehk.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="stickers" style="animation-delay:.32s">
+          <div class="project-card-header">
+            <span class="project-card-domain">labelstickerhk.com</span>
+            <span class="tag tag--stickers">Stickers</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2022</span></div>
+          <p class="project-card-desc-zh">標籤貼紙專門店</p>
+          <p class="project-card-desc-en">Label sticker specialist</p>
+          <a href="https://labelstickerhk.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="stickers" style="animation-delay:.35s">
+          <div class="project-card-header">
+            <span class="project-card-domain">hksticker.com</span>
+            <span class="tag tag--stickers">Stickers</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2022</span></div>
+          <p class="project-card-desc-zh">香港貼紙</p>
+          <p class="project-card-desc-en">HK sticker — custom &amp; wholesale</p>
+          <a href="https://hksticker.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="calendars" style="animation-delay:.38s">
+          <div class="project-card-header">
+            <span class="project-card-domain">printingcalendar.hk</span>
+            <span class="tag tag--calendars">Calendars</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2023</span></div>
+          <p class="project-card-desc-zh">印刷月曆服務</p>
+          <p class="project-card-desc-en">Hong Kong calendar printing</p>
+          <a href="https://printingcalendar.hk" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="cleaning" style="animation-delay:.41s">
+          <div class="project-card-header">
+            <span class="project-card-domain">cleaningproducthk.com</span>
+            <span class="tag tag--cleaning">Cleaning</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2022</span></div>
+          <p class="project-card-desc-zh">清潔產品專門店</p>
+          <p class="project-card-desc-en">HK cleaning product specialist</p>
+          <a href="https://cleaningproducthk.com" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+        <div class="project-card fade-up" data-category="diy" style="animation-delay:.44s">
+          <div class="project-card-header">
+            <span class="project-card-domain">diykitchen.hk</span>
+            <span class="tag tag--diy">DIY</span>
+          </div>
+          <div class="project-card-meta"><span class="project-card-year">2023</span></div>
+          <p class="project-card-desc-zh">DIY廚房套件</p>
+          <p class="project-card-desc-en">DIY kitchen kit specialist</p>
+          <a href="https://diykitchen.hk" target="_blank" rel="noopener noreferrer" class="project-card-link">訪問網站 <i class="ph ph-arrow-square-out"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="footer-brand-name">麥富華 · Benny Mak</span>
+          <span class="footer-brand-tagline">志成文具店 · CS Stationery<br>Since 1984 · 旺角 Mong Kok</span>
+        </div>
+        <nav class="footer-nav" aria-label="頁腳導航">
+          <a href="index.html">首頁 Home</a>
+          <a href="projects.html">作品集 Projects</a>
+          <a href="social.html">社交媒體 Social</a>
+          <a href="performance.html">數據表現 Performance</a>
+          <a href="contact.html">聯絡 Contact</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="https://wa.me/85261741284" target="_blank" rel="noopener noreferrer" class="footer-contact-link">
+            <i class="ph ph-whatsapp-logo"></i>WhatsApp
+          </a>
+          <a href="tel:+85261741284" class="footer-contact-link">
+            <i class="ph ph-phone"></i>+852 6174 1284
+          </a>
+          <a href="mailto:bennymak01@gmail.com" class="footer-contact-link">
+            <i class="ph ph-envelope"></i>bennymak01@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 麥富華 Benny Mak. All rights reserved.</span>
+        <span>志成文具店 · CS Stationery · Since 1984</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA bar -->
+  <div class="sticky-cta" role="complementary" aria-label="快速聯絡">
+    <a href="https://docs.google.com/document/d/1KzcptzHapgTNbtCCPPLZSrJUTBIogOCF/edit" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="font-size:.8rem;padding:.5rem 1rem;">
+      <i class="ph ph-download-simple"></i>下載履歷
+    </a>
+    <a href="https://wa.me/85261741284" target="_blank" rel="noopener noreferrer" class="sticky-cta-icon" aria-label="WhatsApp">
+      <i class="ph ph-whatsapp-logo" style="font-size:1.25rem;"></i>
+    </a>
+    <a href="tel:+85261741284" class="sticky-cta-icon" aria-label="電話">
+      <i class="ph ph-phone" style="font-size:1.25rem;"></i>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/filter.js"></script>
+</body>
+</html>
